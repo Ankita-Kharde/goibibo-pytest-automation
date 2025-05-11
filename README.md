@@ -1,30 +1,41 @@
+Goibibo Flight Booking Automation - Test Suite
+This project automates the end-to-end flight booking process on the Goibibo platform using **Python**, **Pytest**, and **Selenium WebDriver**.
+
 Key Test Scenarios Covered
-1.	Launch Application
-•	Open the Goibibo website
-•	Verify page load and availability of flight booking section
+Launch Application
+- Open the **Goibibo** website
+- Verify the homepage is loaded and the **flight booking section** is visible
 
-2.	Select Flight Search Criteria
-•	Choose source and destination cities
-•	Select departure and return dates using the date picker
-•	Specify number of travelers
+🔍 Select Flight Search Criteria
+- Enter source and destination cities
+- Select departure and return dates via the **date picker**
+- Specify the number of travelers
 
-3.	Execute Search
-•	Click the search button
-•	Wait for the flight results to load completely
+🔎 Execute Search
+- Click on the **Search** button
+- Wait for the **flight results** page to load completely
 
-4.	Apply Filters
-•	One-stop filter: Select to display only one-stop flights
-•	Airline filter: Choose specific airlines to filter flight results
-•	Validate that flight listings are updated accordingly
+🎯 Apply Filters
+- **One-stop filter**: Select to view only one-stop flights
+- **Airline filter**: Choose specific airlines (e.g., Indigo, Air India)
+- Validate that the flight list is updated according to the applied filters
 
-5.	Flight List Validation
-•	Ensure displayed flights match the applied filters
-•	Capture flight details like name, timing, and price for assertion
-________________________________________
- Tools & Technologies Used
-•	Python with Pytest for scripting and test execution
-•	Selenium WebDriver for browser automation
-•	ChromeDriver for interacting with the Chrome browser
-•	Pytest fixtures to manage setup and teardown
-•	Custom utility functions to interact with dynamic UI elements (date picker, filters, etc.)
+📋 Flight List Validation
+- Ensure that the displayed flights match the selected filters
+- Capture and log flight details such as:
+  - Flight name
+  - Departure and arrival time
+  - Price and duration
 
+---
+
+Tools & Technologies Used
+
+- **Python** with **Pytest** for writing and executing test cases
+- **Selenium WebDriver** for automating browser interactions
+- **ChromeDriver** for communication with the Chrome browser
+- **Pytest Fixtures** for structured setup and teardown
+- **Custom Utility Functions** for:
+  - Interacting with the date picker
+  - Validating filter selections
+  - Extracting flight data dynamically
